@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로또번호 추출기</title>
+</head>
+<body>
+    <h2>로또번호 추출기</h2>
+    <script>
+        'use strict';
+        const b1 = Math.random();
+        let b11 =  Math.floor( b1 * 45) + 1;
+
+        const b2 = Math.random();
+        let b22 = Math.floor( b2 * 45) + 1;
+
+        const b3 = Math.random();
+        let b33 = Math.floor( b3 * 45) + 1;
+
+        const b4 = Math.random();
+        let b44 = Math.floor( b4 * 45) + 1;
+
+        const b5 = Math.random();
+        let b55 = Math.floor( b5 * 45) + 1;
+
+        const b6 = Math.random();
+        let b66 = Math.floor( b6 * 45) + 1;
+        
+        let result = [b11, b22, b33, b44, b55, b66]
+        
+        result.sort();
+        console.log(result)
+    </script>
+</body>
+</html>

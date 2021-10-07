@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주사위게임</title>
+</head>
+<body>
+    <h2>주사위게임</h2>
+    <script>
+        'use strict';
+        
+
+        while(true){
+            const dice = Math.random();
+            const diceNum = Math.floor(dice * 6) + 1;
+        
+            let i = prompt('주사위 숫자를 맞춰보세요(1~6)');
+        
+        if(i == diceNum){
+            alert(`정답입니다! 게임을 종료합니다.`);
+            break;
+        }
+                alert(`틀렸습니다. 정답은 ${diceNum} 입니다.`);
+        }
+
+        
+
+    </script>
+</body>
+</html>
